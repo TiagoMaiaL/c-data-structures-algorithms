@@ -11,14 +11,15 @@ rm -rf ./*
 
 source_files=(
     '../src/main.c'
+    '../src/linked-list.c'
 )
 
 files=("${source_files[@]}")
 
 args=""
 
-if [ -f ./out ]; then
-    rm out
+if [ -f ./a.out ]; then
+    rm a.out
     rm -rf *.dSYM
 fi
 
